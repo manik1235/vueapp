@@ -32,3 +32,21 @@
   <p>{{ message }}</p>
   <input v-model="message">
 </div>
+
+<div id="app-ajhk">
+  <br>
+  <div>
+    <input v-model="fullName"><br>
+    <input v-model="nickName"><br>
+    <input v-model="address1"><br>
+    <input v-model="address2"><br>
+    <input v-model="postalCode"><br>
+  </div>
+
+  <p>
+    {{ fullName }}<span v-if="nickName !== ''"> ({{ nickName}})</span><br>
+    {{ address1 }}<br>
+    {{ address2 }}<br>
+    {{ postalCode }}<br>
+  </p>
+</div>

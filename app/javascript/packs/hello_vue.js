@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     data: {
       message: 'Hello Vue!'
     }
-  })
+  });
 
   // v-bind
   var app2 = new Vue({
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     data: {
       message: 'You loaded this page on ' + new Date().toLocaleString()
     }
-  })
+  });
 
   // v-if
   var app3 = new Vue({
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     data: {
       seen: true
     }
-  })
+  });
 
   // v-for
   var app4 = new Vue({
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { text: 'Build something awesome' },
       ]
     }
-  })
+  });
 
   // v-on
   var app5 = new Vue({
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         this.message = this.message.split(' ').reverse().join(' ')
       }
     }
-  })
+  });
 
   // v-model
   var app6 = new Vue({
@@ -56,5 +56,17 @@ document.addEventListener('DOMContentLoaded', () => {
     data: {
       message: 'Hello Vue!'
     }
-  })
-})
+  });
+
+  // app-ajhk
+  var appAjhk = new Vue({
+    el: '#app-ajhk',
+    data: {
+      fullName: 'Full Name',
+      nickName: 'Nick Name',
+      address1: 'Address Line 1',
+      address2: 'Address Line 2',
+      postalCode: 'Zip/Postal Code'
+    }
+  });
+});
